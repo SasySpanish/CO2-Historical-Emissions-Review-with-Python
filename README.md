@@ -1,4 +1,4 @@
-# CO₂ Historical Emissions Review (1850–2050)
+# CO₂ Historical Emissions Review (1850–2025)
 
 Report on CO₂ emissions, global warming, and sustainable energy transition pathways.
 
