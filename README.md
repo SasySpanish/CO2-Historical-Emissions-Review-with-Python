@@ -33,13 +33,10 @@ Global annual emissions are aggregated by source (coal, oil, gas, cement, flarin
 Results highlight historical dominance of coal (46.5% – 4,067 GtCO₂), followed by oil (33.5% – 2,936 GtCO₂) and natural gas (15.5% – 1,358 GtCO₂).  
 **Total cumulative emissions in 2024: 8,751 GtCO₂**, with exponential acceleration after 1950 driven by industrialization.
 
+![a](results/fuel+legend.png)
+
 Final breakdown (1850–2024):
-- Coal: 4,067 GtCO₂ → 46.5%  
-- Oil: 2,936 GtCO₂ → 33.5%  
-- Gas: 1,358 GtCO₂ → 15.5%  
-- Cement: 230 GtCO₂ → 2.6%  
-- Flaring: 95 GtCO₂ → 1.1%  
-- Other industry: 65 GtCO₂ → 0.7%
+![a](results/fuel%.PNG)
 
 **Implication**: Phase-out of coal must be prioritized, together with a rapid shift to renewables, to achieve the necessary 70–80% reduction in fossil fuel emissions by 2030.
 
@@ -48,12 +45,16 @@ Final breakdown (1850–2024):
 Scripts: `emissions_country.py` & `less_emissions.py`  
 Carbon intensity (GtCO₂ per billion 2011 USD GDP) is analysed for selected major economies, merging emissions with population and GDP per capita (Maddison dataset).
 
+![A](results/emitionscountry.png)
+
 Key findings for high-income/developing economies:
 - China: intensity 0.67 GtCO₂/billion USD (60% reduction since 1990, but absolute emissions still rising to 11.71 GtCO₂ in 2023)  
 - United States: 0.06 GtCO₂/billion USD (55% reduction, 2023 GDP ~19,975 billion USD)  
 - India: 2.83 GtCO₂/billion USD (still coupled, but high potential for green leapfrogging)
 
 Clear declining trajectories are visible for EU27, Japan, Germany (intensity <0.2 in recent years), while USA and China show ongoing transition.  
+![A](results/lessemitionscountry.png)
+
 Average intensity reductions 1990–2023: 40–60% in mature economies, still globally insufficient for +1.5°C compatibility.
 
 **Implication**: Carbon pricing, renewable incentives, and industrial electrification are key accelerators. China is leading in solar/wind deployment but remains heavily coal-dependent.
@@ -62,6 +63,8 @@ Average intensity reductions 1990–2023: 40–60% in mature economies, still gl
 
 Script: `tcre.py`  
 Linear regression between cumulative CO₂ emissions and global temperature anomalies.
+
+![A](results/tcre.png)
 
 Results: **TCRE = 0.00011 °C/GtCO₂**  
 **R² = 0.8995** (p-value < 10⁻⁸⁸)  
@@ -76,6 +79,9 @@ Scatter plot with temporal colorbar shows strong linearity since ~1900.
 
 Script: `stat_descrittive.py`  
 Multi-panel overview of post-1950 trends:
+
+![a](results/statdesc.png)
+
 - CO₂ by source/sector: coal peak ~12,470 Mt, oil ~12,470 Mt  
 - Total GHG (incl. LULUCF): 53,819 MtCO₂e  
 - CO₂ per capita: China ~4.7 t/year  
