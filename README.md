@@ -162,4 +162,4 @@ Include full data provenance and citation of original sources in every publicati
 
 Questions, collaborations, extensions (scenario modelling, renewable integration, ML forecasting) are welcome.
 
-Last updated: December 2025
+Developed by **[Salvatore Spagnuolo](https://github.com/SasySpanish)**  
