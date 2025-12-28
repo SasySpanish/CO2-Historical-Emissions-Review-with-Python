@@ -29,6 +29,7 @@ The analyses in this repository are based on high-quality, publicly available da
 
 These datasets provide a comprehensive, consistent foundation for tracing historical emissions responsibility, attributing observed warming, evaluating economic decoupling progress, quantifying climate debt, and projecting differentiated national pathways toward a 1.5°C-compatible future.
 
+## Analysis workflow
 
 The provided scripts (`fuel.py`, `emissions_country.py`, `climate_debt.py`, `stat_descrittive.py`, `less_emissions.py`, `trajectory.py`, `tcre.py`) were used to generate quantitative insights on historical emission trends, correlation with global temperature rise, and equitable pathways toward net-zero.
 
