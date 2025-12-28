@@ -1,4 +1,4 @@
-# CO₂ Historical Emissions Review (1850–2025)
+# CO₂ Historical Emissions Review (1850–2024)
 
 Report on CO₂ emissions, global warming, and sustainable energy transition pathways.
 
@@ -10,7 +10,7 @@ The analyses in this repository are based on high-quality, publicly available da
 
 | Dataset / File name                              | Source / Producer                              | Content Overview                                                                 | Time Coverage       | Unit / Format                  | Main Analyses Performed                                      |
 |--------------------------------------------------|------------------------------------------------|----------------------------------------------------------------------------------|---------------------|--------------------------------|--------------------------------------------------------------|
-| `co2-by-source.csv`                              | Global Carbon Project → Our World in Data      | Annual territorial CO₂ emissions disaggregated by source: coal, oil, gas, cement, flaring, other industry | 1750–2024          | tonnes CO₂                     | Cumulative emissions by source, stacked area charts, historical responsibility breakdown |
+| `co2-by-source.csv`                              | Global Carbon Project → Our World in Data      | Annual territorial CO₂ emissions  by source: coal, oil, gas ecc. | 1750–2024          | tonnes CO₂                     | Cumulative emissions by source, stacked area charts, historical responsibility breakdown |
 | `annual-co2-emissions-per-country.csv`           | Global Carbon Project → Our World in Data      | Annual territorial CO₂ emissions at country level (including selected regional aggregates) | 1750–2024          | tonnes CO₂                     | Country-level cumulative totals, climate debt calculation, national per-capita emissions, equitable 1.5°C pathways |
 | `temperature-anomaly.csv`                        | HadCRUT5 – Met Office Hadley Centre            | Annual global, hemispheric and land/ocean temperature anomalies relative to 1861–1890 baseline | 1850–2025          | °C anomaly                     | TCRE regression, correlation with cumulative emissions, long-term global warming trend |
 | `population.csv`                                 | Our World in Data / HYDE / United Nations      | Historical and contemporary population estimates by country                     | 10,000 BCE–2024    | persons                        | Per-capita emissions, fair-share climate debt allocation, carbon intensity calculations |
