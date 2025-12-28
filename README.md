@@ -44,6 +44,8 @@ Focus areas include historical responsibility, decoupling progress, and climate 
 
 All calculations have been verified. As an example, the TCRE (Transient Climate Response to Cumulative Emissions) regression yields **0.00011 °C/GtCO₂** with **R² = 0.8995**, confirming strong linearity between cumulative emissions (~12,321 GtCO₂ in 2024) and the observed +1.543 °C anomaly.
 
+---
+
 ## Cumulative CO₂ Emissions by Source (1850–2024)
 
 Script: `fuel.py`  
@@ -145,6 +147,8 @@ Countries with low emissions are allowed to a clean development
 
 **Implication**: Strongly differentiated policies are required: rapid fossil phase-out in high per-capita emitters, green investment space for low emitters.
 
+---
+
 ## Conclusions and Policy & Repository Recommendations
 
 The analyses confirm coal as the dominant historical driver (46.5%), with a very strong linear relationship to observed warming (R² ≈ 0.90). Decoupling is progressing in mature economies but remains globally inadequate. Cumulative emissions have already exceeded critical thresholds.
@@ -161,4 +165,9 @@ Include full data provenance and citation of original sources in every publicati
 
 Questions, collaborations, extensions (scenario modelling, renewable integration, ML forecasting) are welcome.
 
+---
+
+## Author
 Developed by **[Salvatore Spagnuolo](https://github.com/SasySpanish)**  
+
+---
