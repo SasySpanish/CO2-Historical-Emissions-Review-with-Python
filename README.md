@@ -36,7 +36,8 @@ Results highlight historical dominance of coal (46.5% – 4,067 GtCO₂), follow
 ![a](results/fuel+legend.png)
 
 Final breakdown (1850–2024):
-![a](results/fuel%.PNG)
+
+![a](results/fuelperc.PNG)
 
 **Implication**: Phase-out of coal must be prioritized, together with a rapid shift to renewables, to achieve the necessary 70–80% reduction in fossil fuel emissions by 2030.
 
@@ -94,6 +95,8 @@ These confirm acceleration of emissions since the 1980s, with Asia as the main r
 Script: `climate_debt.py`  
 Cumulative emissions normalized against per-capita fair share (global total ~2,600 GtCO₂ / historical population).
 
+![A](results/climate_debt.png)
+
 Top emitters (absolute):  
 - United States: 351 GtCO₂ (30.1%)  
 - China: 19.1%  
@@ -111,11 +114,15 @@ Largest climate debtors (excess over fair share):
 Script: `trajectory.py`  
 Linear reduction pathways to net-zero by 2050, based on IPCC AR6 remaining budget (~280 GtCO₂ post-2025).
 
-Selected countries and required average annual change:
-- Saudi Arabia: 0.68 GtCO₂ (20.4 t/capita) → **-3.7%/year**  
-- Australia: 0.38 GtCO₂ (14.5 t/capita) → **-3.7%/year**  
-- United States: 4.92 GtCO₂ (14.3 t/capita) → **-3.7%/year**  
-- India: 3.06 GtCO₂ (2.1 t/capita) → **+2.5%/year** (clean development allowed)
+![](results/trajectoryless.PNG)
+
+Countries with high emissions required average annual change:
+- Saudi Arabia: 0.68 GtCO₂ (20.4 t/capita) → **-18.1%/year**  
+- Australia: 0.38 GtCO₂ (14.5 t/capita) → **-16.3%/year**  
+- United States: 4.92 GtCO₂ (14.3 t/capita) → **-15.8%/year**
+Countries with low emissions are allowed to a clean development
+- India: 3.06 GtCO₂ (2.1 t/capita) → **+1.9%/year**
+- Brazil: 0.48 GtCO₂ (2.3 t/capita) → **+2.5%/year**
 
 **Implication**: Strongly differentiated policies are required: rapid fossil phase-out in high per-capita emitters, green investment space for low emitters.
 
@@ -130,8 +137,7 @@ The analyses confirm coal as the dominant historical driver (46.5%), with a very
 - Differentiated national contributions respecting CBDR-RC (Common But Differentiated Responsibilities and Respective Capabilities)
 
 **Repository best practices**:
-Structure as proposed (data/raw & processed, src/, notebooks/, reports/, requirements.txt).  
-Use Jupyter notebooks for interactive exploration.  
+Structure as proposed (data/raw & processed, src/, reports/).   
 Include full data provenance and citation of original sources in every publication.
 
 Questions, collaborations, extensions (scenario modelling, renewable integration, ML forecasting) are welcome.
