@@ -2,14 +2,33 @@
 
 Report on CO₂ emissions, global warming, and sustainable energy transition pathways.
 
-## Introduction and Methodological Context
+## Data Sources and Datasets Overview
 
-Sources:  
-- Global Carbon Project – Global Carbon Budget 2025  
-- HadCRUT5 – Met Office Hadley Centre  
-- Our World in Data (processed aggregations)  
-- Maddison Project Database (historical GDP)  
-- IPCC AR6 (remaining carbon budget and TCRE estimates)
+The analyses in this repository are based on high-quality, publicly available datasets from Our World in Data, processed and harmonized for consistency. All primary data originate from authoritative institutions and have been minimally transformed (e.g. unit conversions, global aggregations) to enable the presented calculations and visualizations.
+
+### Primary Datasets Used
+
+| Dataset / File name                              | Source / Producer                              | Content Overview                                                                 | Time Coverage       | Unit / Format                  | Main Analyses Performed                                      |
+|--------------------------------------------------|------------------------------------------------|----------------------------------------------------------------------------------|---------------------|--------------------------------|--------------------------------------------------------------|
+| `co2-by-source.csv`                              | Global Carbon Project → Our World in Data      | Annual territorial CO₂ emissions disaggregated by source: coal, oil, gas, cement, flaring, other industry | 1750–2024          | tonnes CO₂                     | Cumulative emissions by source, stacked area charts, historical responsibility breakdown |
+| `annual-co2-emissions-per-country.csv`           | Global Carbon Project → Our World in Data      | Annual territorial CO₂ emissions at country level (including selected regional aggregates) | 1750–2024          | tonnes CO₂                     | Country-level cumulative totals, climate debt calculation, national per-capita emissions, equitable 1.5°C pathways |
+| `temperature-anomaly.csv`                        | HadCRUT5 – Met Office Hadley Centre            | Annual global, hemispheric and land/ocean temperature anomalies relative to 1861–1890 baseline | 1850–2025          | °C anomaly                     | TCRE regression, correlation with cumulative emissions, long-term global warming trend |
+| `population.csv`                                 | Our World in Data / HYDE / United Nations      | Historical and contemporary population estimates by country                     | 10,000 BCE–2024    | persons                        | Per-capita emissions, fair-share climate debt allocation, carbon intensity calculations |
+| `gdp-per-capita-maddison.csv`                    | Maddison Project Database                      | GDP per capita in constant 2011 international dollars by country                | 1–2023             | 2011 intl. $ per person        | Total GDP reconstruction, economic–emissions decoupling analysis, carbon intensity trends |
+| `total-ghg-emissions.csv`                        | Jones et al. / OWID (National contributions)   | Total annual greenhouse gas emissions including land-use, land-use change and forestry (LULUCF) | 1850–2023          | tonnes CO₂-equivalent (GWP100) | Multi-trend overview, comparison between CO₂-only and full GHG trends |
+| `co2-emissions-per-capita.csv`                   | Global Carbon Project → Our World in Data      | Annual CO₂ emissions per person by country                                       | 1750–2024          | tonnes CO₂ per capita          | Per-capita benchmarking, equity considerations in climate debt and future pathways |
+
+### Key Processing and Methodological Notes
+
+- All CO₂ emissions are **territorial** (production-based accounting), excluding emissions from international aviation & shipping bunkers and land-use, land-use change and forestry (LULUCF) unless explicitly included (as in the total GHG dataset).
+- Conversion from tonnes of carbon to tonnes of CO₂ uses the standard factor **3.664** recommended by the Global Carbon Project.
+- Global aggregates are calculated as the sum across all countries, consistent with territorial accounting principles.
+- Temperature anomalies are expressed relative to the 1861–1890 mean, a widely accepted reference period for pre-industrial conditions.
+- GDP values are in constant 2011 international dollars to ensure long-term comparability and reliable intensity metrics.
+- All raw data files remain untouched; all derived calculations (cumulatives, per-capita, intensity, regressions) are performed dynamically in the analysis scripts.
+
+These datasets provide a comprehensive, consistent foundation for tracing historical emissions responsibility, attributing observed warming, evaluating economic decoupling progress, quantifying climate debt, and projecting differentiated national pathways toward a 1.5°C-compatible future.
+
 
 The provided scripts (`fuel.py`, `emissions_country.py`, `climate_debt.py`, `stat_descrittive.py`, `less_emissions.py`, `trajectory.py`, `tcre.py`) were used to generate quantitative insights on historical emission trends, correlation with global temperature rise, and equitable pathways toward net-zero.
 
