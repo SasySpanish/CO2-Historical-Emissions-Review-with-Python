@@ -8,15 +8,16 @@ The analyses in this repository are based on high-quality, publicly available da
 
 ### Primary Datasets Used
 
-| Dataset / File name                      | Source / Producer                        | Content Overview                                              | Time Coverage   | Unit / Format               | Main Analyses Performed                                      |
-|------------------------------------------|------------------------------------------|---------------------------------------------------------------|-----------------|-----------------------------|--------------------------------------------------------------|
-| `co2-by-source.csv`                      | Global Carbon Project → OWID             | Annual CO₂ emissions by source (coal, oil, gas, ecc.) | 1750–2024      | tonnes CO₂                  | Cumulative emissions by source, historical responsibility    |
-| `annual-co2-emissions-per-country.csv`   | Global Carbon Project → OWID             | Annual territorial CO₂ emissions by country/region            | 1750–2024      | tonnes CO₂                  | Country cumulative totals, climate debt, 1.5°C pathways      |
-| `temperature-anomaly.csv`                | HadCRUT5 – Met Office Hadley Centre      | Global temperature anomalies vs 1861–1890 baseline            | 1850–2025      | °C anomaly                  | TCRE regression, warming attribution                         |
-| `population.csv`                         | OWID / HYDE / UN                         | Historical & current population by country                    | 10k BCE–2024   | persons                     | Per-capita emissions, fair-share debt, intensity metrics     |
-| `gdp-per-capita-maddison.csv`            | Maddison Project Database                | GDP per capita in constant 2011 intl. dollars                 | 1–2023         | 2011 intl. $ per person     | GDP reconstruction, decoupling, carbon intensity trends      |
-| `total-ghg-emissions.csv`                | Jones et al. / OWID                      | Total GHG emissions incl. LULUCF (CO₂-equivalent)             | 1850–2023      | tonnes CO₂e (GWP100)        | Multi-trend overview, CO₂ vs full GHG comparison             |
-| `co2-emissions-per-capita.csv`           | Global Carbon Project → OWID             | Annual CO₂ emissions per person by country                    | 1750–2024      | tonnes CO₂ per capita       | Per-capita benchmarking, equity in debt & pathways           |
+| Dataset / File name                              | Content Overview                                              | Time Coverage   | Unit / Format                  | Main Analyses Performed                                      |
+|--------------------------------------------------|---------------------------------------------------------------|-----------------|--------------------------------|--------------------------------------------------------------|
+| `co2-by-source.csv`                              | Annual CO₂ emissions by source (coal, oil, gas, cement, flaring, other) | 1750–2024      | tonnes CO₂                     | Cumulative emissions by source, stacked charts, historical responsibility |
+| `annual-co2-emissions-per-country.csv`           | Annual territorial CO₂ emissions by country/region            | 1750–2024      | tonnes CO₂                     | Country cumulative totals, climate debt, per-capita, 1.5°C pathways |
+| `temperature-anomaly.csv`                        | Global temperature anomalies vs 1861–1890 baseline            | 1850–2025      | °C anomaly                     | TCRE regression, correlation with cumulative emissions       |
+| `population.csv`                                 | Historical and current population estimates by country        | 10,000 BCE–2024 | persons                        | Per-capita emissions, fair-share climate debt, intensity metrics |
+| `gdp-per-capita-maddison.csv`                    | GDP per capita in constant 2011 international dollars         | 1–2023         | 2011 intl. $ per person        | GDP reconstruction, economic–emissions decoupling, carbon intensity |
+| `total-ghg-emissions.csv`                        | Total GHG emissions including LULUCF (CO₂-equivalent)         | 1850–2023      | tonnes CO₂-eq (GWP100)         | Multi-trend overview, CO₂ vs full GHG comparison             |
+| `co2-emissions-per-capita.csv`                   | Annual CO₂ emissions per person by country                    | 1750–2024      | tonnes CO₂ per capita          | Per-capita benchmarking, equity considerations in debt and pathways |
+
 ### Key Processing and Methodological Notes
 
 - All CO₂ emissions are **territorial** (production-based accounting), excluding emissions from international aviation & shipping bunkers and land-use, land-use change and forestry (LULUCF) unless explicitly included (as in the total GHG dataset).
