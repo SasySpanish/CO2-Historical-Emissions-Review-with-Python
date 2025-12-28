@@ -65,7 +65,7 @@ Required annual reduction rates (or allowed growth) to reach net-zero by 2050 un
 
 ![](trajectoryless.PNG)
 
-High per-capita emitters (USA, Australia, Saudi Arabia, Canada, Russia) require aggressive reductions (~3.7% per year), while low per-capita developing countries (India, Indonesia, Brazil) are allowed limited clean growth (+2.5% per year) before peaking.
+High per-capita emitters (USA, Australia, Saudi Arabia, Canada, Russia) require aggressive reductions (~-15% per year), while low per-capita developing countries (like India, Indonesia, Brazil) are allowed limited clean growth (~+2% per year) before peaking.
 
 ### Usage Notes
 - All images are high-resolution PNG files suitable for direct inclusion in documents and slides.
